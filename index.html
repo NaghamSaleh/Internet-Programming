@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Cultural Activities Website  </title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    
+
+    <section class="header">
+
+        <nav>
+            <a href="index.html"><img src="Images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li> <a href="index.html">HOME</a></li>
+                    <li> <a href="Event.html">EVENTS</a></li>
+                    <li> <a href="gallery.html">GALLERY</a></li>
+                    <li> <a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+        <div class="text-box">
+            <h1>Türkiye Cultural Activities</h1>
+            <p>Experience the essence of Turkey's rich cultural heritage, all in one place.</p>
+            <a href="Event.html" class="hero-btn">EXPLORE UPCOMING EVENTS</a>
+
+        </div>
+
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>Welcome to our website dedicated to showcasing the vibrant activities and cultural events of Turkey!</h1>
+                <p>We are your ultimate guide to exploring the rich tapestry of traditions, artistry, and entertainment that Turkey has to offer. We are passionate about celebrating the diverse cultural heritage and dynamic energy of Turkey. Our mission is to connect locals and visitors alike with the best events, festivals, and experiences across the country.
+
+                    Whether you're interested in traditional folk festivals, contemporary art exhibitions, lively music concerts, or captivating theater performances, our platform is your go-to resource for discovering the pulse of Turkish culture.
+                    
+                    With a team of dedicated enthusiasts and experts, we curate a comprehensive calendar of events, providing you with up-to-date information on what's happening in cities and regions throughout Turkey. From bustling metropolises like Istanbul and Ankara to charming coastal towns and historic sites, there's always something exciting to explore.
+                    
+                    Join us on a journey of discovery as we delve into the rich cultural mosaic of Turkey. Let us inspire you to immerse yourself in the sights, sounds, and flavors of this enchanting country. Whether you're a seasoned traveler or a first-time visitor, we invite you to experience the magic of Turkey with us.
+                    
+                    Come along and explore Turkey's vibrant cultural scene with [Website Name]. Your adventure awaits!</p>
+                <a href="Gallery.html" class="hero-btn blue-btn">VIEW GALLERY </a>
+            </div>
+    
+            <div class="about-col">
+                <img src="Images/aboutus.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <!-------------- Featured Slider -------------->
+    <section class="Featured">
+
+        <h1>Our Featured Events</h1> <br>
+
+        <!-- Start Image Slider -->
+        <div class="slider">
+            <div class="slides">
+                <!-- Start Radio Buttons -->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <!-- End Radio Buttons -->
+                <!-- Start Slide Images -->
+                <div class="slide first">
+                    <a href="#" onclick="openPopupWithEventDetails('Kirkpinar Oil Wrestling Championship')">
+                        <img src="Images/1.jpg" alt="">
+                        <div class="overlay">
+                            <p>Kirkpinar Oil Wrestling Championship</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="page2.html">
+                        <img src="Images/2.jpg" alt="">
+                        <div class="overlay">
+                            <p>Hidirellez</p>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="slide">
+                    <a href="page1.html">
+                        <img src="Images/3.jpg" alt="">
+                        <div class="overlay">
+                            <p>Istanbul Tulip Festival</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="page1.html">
+                        <img src="Images/4.jpg" alt="">
+                        <div class="overlay">
+                            <p>Cappadocia Balloon Festival</p>
+                        </div>
+                    </a>
+
+                </div>
+                <!-- End Slide Images -->
+                <!-- Automatic Navigation start -->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+                <!-- Automatic Navigation end -->
+            </div>
+            <!-- Manual Navigation start -->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+            <!-- Manual Navigation end -->
+        </div>
+        <!-- End Image Slider -->
+    </section>
+
+
+
+        <!---------- Footer ------------->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p> A Turkish event website is your go-to destination <br> for discovering and experiencing the rich cultural events and vibrant festivals happening throughout Turkey.</p>
+        <div class="icons">
+
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+            <p>This Website Was Developed By Waseem Sadideen and Nagham Saleh   </p>
+        </div>
+    </section>
+
+
+    <script>
+
+        function showMenu() {
+            document.getElementById("navLinks").style.right = "0";
+        }
+        
+        function hideMenu() {
+            document.getElementById("navLinks").style.right = "-200%";      
+         }
+
+
+
+        // Auto slide functionality
+        window.onload = function() {
+            var counter = 1;
+            setInterval(function() {
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if (counter > 4) {
+                    counter = 1;
+                }
+            }, 5000);
+        }
+    </script>
+
+
+</body>
+
+</html>
